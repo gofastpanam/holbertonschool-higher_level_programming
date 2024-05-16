@@ -7,5 +7,4 @@ def safe_print_integer(value):
     except:
         return (False)
     finally:
-        print()
-
+        pass
