@@ -3,8 +3,9 @@ def safe_print_integer(value):
     try:
         print("{:d}".format(value))
         print(end= "")
+        return (True)
     except:
         return (False)
     finally:
         print()
-        return (True)
+
