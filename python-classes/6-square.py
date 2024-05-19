@@ -4,6 +4,7 @@
 This module defines a class Square which represents a square with a given size and position.
 """
 
+
 class Square:
     """
     The Square class represents a square with a private size attribute and a position.
@@ -16,11 +17,9 @@ class Square:
     def __init__(self, size=0, position=(0, 0)):
         """
         Initialize a new Square instance.
-
         Args:
             size (int): The size of one side of the square. Default is 0.
             position (tuple): The position to start printing the square. Default is (0, 0).
-
         Raises:
             TypeError: If size is not an integer or position is not a tuple of 2 positive integers.
             ValueError: If size is less than 0.

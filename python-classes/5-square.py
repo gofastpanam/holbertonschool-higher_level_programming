@@ -37,7 +37,6 @@ class Square:
             """
             Set the size of the square.
             """
-            
             if not isinstance(value, int):
                 raise TypeError("size must be an integer")
             if value < 0:
