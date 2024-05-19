@@ -2,9 +2,9 @@
 def safe_print_integer(value):
     try:
         print("{:d}".format(value))
-        print(end= "")
+        print(end="")
         return (True)
-    except:
+    except (ValueError, TypeError, IndexError):
         return (False)
     finally:
         pass
