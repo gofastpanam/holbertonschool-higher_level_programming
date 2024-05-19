@@ -49,12 +49,15 @@ class Square:
     @property
     def position(self):
         """
-        Set the position for print the square 
+        Get the position for print the square 
         """
         return(self.__position)
          
     @position.setter
     def position(self, value):
+         """
+         Set the position for print the square 
+         """
          if not isinstance(value, tuple):
             print("position must be a tuple of 2 positive integers")
             raise(TypeError)
@@ -72,9 +75,8 @@ class Square:
     
     def my_print(self):
          """
-         Prints a square with side of square egals size with # to stdout.
+         Prints a square with side of square egals size with # to stdout at specific position
          """
-         
          
          for h in range(0, self.__position[1]):
              print("")         
