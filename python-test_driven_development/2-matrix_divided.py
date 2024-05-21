@@ -27,11 +27,9 @@ def matrix_divided(matrix, div):
         print("matrix must be a matrix (list of lists) of integers/floats")
         raise (TypeError)
     if not isinstance(div, (int, float)):
-        print("div must be a number")
-        raise (TypeError)
+        raise TypeError("div must be a number")
     if div == 0:
-        print("division by zero")
-        raise (ZeroDivisionError)
+        raise ZeroDivisionError("division by zero")
 
     row_size = set(len(row) for row in matrix)
     if len(row_size) != 1:
