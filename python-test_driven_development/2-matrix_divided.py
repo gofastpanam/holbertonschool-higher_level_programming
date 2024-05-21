@@ -31,10 +31,10 @@ def matrix_divided(matrix, div):
     if div == 0:
         raise ZeroDivisionError("division by zero")
 
-    row_size = set(len(row) for row in matrix)
-    if len(row_size) != 1:
-        print("Each row of the matrix must have the same size")
-        raise (TypeError)
+    first_row_length = len(matrix[0])
+    for row in matrix:
+        if len(row) != first_row_length:
+            raise TypeError("Each row of the matrix must have the same size")
 
     new_matrix = []
     for row in matrix:
