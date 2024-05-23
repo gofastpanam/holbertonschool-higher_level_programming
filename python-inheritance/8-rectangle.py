@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This module provides a class
+This module provides a class BaseGeometry and subclass Rectangle
 """
 
 
@@ -26,8 +26,7 @@ class Rectangle(BaseGeometry):
     This is a class Rectangle
     """
     def __init__(self, width, height):
-        self.__width = width
+        self.integer_validator("width", width)
+        self.integer_validator("height", height)
+        self.__integer = width
         self.__height = height
-
-        if not isinstance(width, int) and not isinstance(height, int):
-            raise TypeError
