@@ -19,3 +19,6 @@ class BaseGeometry():
             raise ValueError("{} must be greater than 0".format(name))
         if not isinstance(name, int):
             return
+        
+        self.name = name
+        self.value = value
