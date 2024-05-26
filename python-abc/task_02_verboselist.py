@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This module provides a class VerboseList
+This module provides a class VerboseList.
 """
 
 
