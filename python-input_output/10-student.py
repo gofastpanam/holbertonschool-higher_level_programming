@@ -3,8 +3,6 @@
 This module provides a class Student
 """
 
-import sys
-
 
 class Student:
     """
