@@ -10,11 +10,9 @@ import json
 
 def serialize_and_save_to_file(data, filename):
     with open(filename, 'w') as file:
-        file.write(json.dumps(data))
-    pass
+        json.dump(data, file)
 
 
 def load_and_deserialize(filename):
     with open(filename, 'r') as file:
-        file.read(json.loads(data))
-    pass
+        return json.load(file)
