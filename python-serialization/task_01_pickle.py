@@ -20,11 +20,10 @@ class CustomObject:
         print(self.name)
         print(self.age)
         print(self.is_student)
-        
+
     def serialize(self, filename):
         with open(filename, 'wb') as file:
             pickle.dump(self, file)
-
 
     @classmethod
     def deserialize(cls, filename):
