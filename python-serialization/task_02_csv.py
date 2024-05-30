@@ -9,12 +9,16 @@ import csv
 import json
 
 
-def convert_csv_to_json(filename):
-    with open(filename, 'r') as file:
-        try:
-            result = csv.reader(file)
-            writer = csv.DictWriter(result)
-            json.dumps(data.json, file)
-            return True
-        except FileNotFoundError:
-            return False
+def convert_csv_to_json(csv_filename):
+      try:
+        with open(csv_filename, 'r', newline='') as csv_file:
+            reader = csv.DictReader(csv_file)
+            data = list(reader)
+
+            with open('data.json', 'w') as json_file:
+                json.dump(data, json_file, indent='4')
+
+        return True
+      except FileNotFoundError:
+        print(f"Error: File '{csv_filename}' not found.")
+        return False

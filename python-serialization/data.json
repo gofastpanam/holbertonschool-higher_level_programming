@@ -1,1 +1,22 @@
-{"name": "John Doe", "age": 30, "city": "New York"}
+[
+4{
+44"name": "John",
+44"age": "28",
+44"city": "New York"
+4},
+4{
+44"name": "Alice",
+44"age": "24",
+44"city": "Los Angeles"
+4},
+4{
+44"name": "Bob",
+44"age": "22",
+44"city": "Chicago"
+4},
+4{
+44"name": "Eve",
+44"age": "30",
+44"city": "San Francisco"
+4}
+]
