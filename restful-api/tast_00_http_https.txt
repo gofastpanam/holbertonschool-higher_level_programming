@@ -1,0 +1,65 @@
+--------------------------
+HTTP vs HTTPS:
+--------------------------
+HTTP (HyperText Transfer Protocol) and HTTPS (HyperText Transfer Protocol Secure) are protocols used for data transfer on the web.
+The primary distinction lies in data security.
+HTTPS adds an extra layer of protection through encryption, utilizing SSL/TLS protocols (Secure Sockets Layer / Transport Layer Security), ensuring safer online browsing and transactions.
+Browsers typically display a padlock icon in the address bar to signify a secure connection.
+HTTPS sites enjoy a slight advantage in terms of SEO as they are deemed more secure and reliable.
+
+
+--------------------------
+HTTP Request Structure:
+--------------------------
+Request Line: Specifies the request type (method), resource path, and protocol version.
+Request Headers: Provide additional information about the request or the client.
+Request Body (optional): Contains data to be sent to the server (e.g., form data).
+
+- HTTP Request Example:
+GET /index.html HTTP/1.1
+Host: www.example.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: keep-alive
+
+
+--------------------------
+HTTP Response Structure:
+--------------------------
+Status Line: Indicates the protocol version, status code, and status phrase.
+Response Headers: Provide additional information about the response or the server.
+Response Body (optional): Contains data returned to the client (e.g., webpage content).
+
+- HTTP Response Example:
+HTTP/1.1 200 OK
+Date: Mon, 31 May 2024 12:34:56 GMT
+Server: Apache/2.4.41 (Ubuntu)
+Last-Modified: Tue, 01 Dec 2023 16:00:00 GMT
+Content-Length: 137
+Content-Type: text/html; charset=UTF-8
+Connection: Closed
+
+
+--------------------------
+Common HTTP Methods:
+--------------------------
+GET: Retrieves data.
+POST: Sends data to the server for processing.
+PUT: Updates or creates a resource on the server.
+DELETE: Removes a resource.
+PATCH: Applies partial modifications to a resource.
+HEAD: Retrieves response headers without the response body.
+OPTIONS: Retrieves supported HTTP methods for a specific resource.
+CONNECT: Establishes a bidirectional communication tunnel through the server.
+TRACE: Echoes the received request to test the request path via the server.
+
+
+--------------------------
+Common HTTP Status Codes:
+--------------------------
+Success: 200, 201, 204
+Redirection: 301, 302
+Client Error: 400, 401, 403, 404, 405, 409
+Server Error: 500, 502, 503, 504
