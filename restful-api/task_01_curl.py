@@ -1,25 +1,21 @@
 #!/usr/bin/python3
 
-print(' ------------------------------------------------- ')
-print(' ------posts_from_JSONPlaceholder.txt------------- ')
-print(' ------------------------------------------------- ')
+def print_stylish_separator(title):
+    width = len(title) + 10
+    print(f"{'-' * width}")
+    print(f"{' ' * 5}{title}")
+    print(f"{'-' * width}")
 
-with open('posts_from_JSONPlaceholder.txt', 'r') as file:
-    for line in file:
-        print(line.strip())
+def print_file_content(filename):
+    with open(filename, 'r') as file:
+        for line in file:
+            print(line.strip())
 
-print(' ------------------------------------------------- ')
-print(' ----posts_headers_from_JSONPlaceholder.txt------- ')
-print(' ------------------------------------------------- ')
+print_stylish_separator("posts_from_JSONPlaceholder.txt")
+print_file_content("posts_from_JSONPlaceholder.txt")
 
-with open('posts_headers_from_JSONPlaceholder.txt', 'r') as file:
-    for line in file:
-        print(line.strip())
+print_stylish_separator("posts_headers_from_JSONPlaceholder.txt")
+print_file_content("posts_headers_from_JSONPlaceholder.txt")
 
-print(' ------------------------------------------------- ')
-print(' ----post_request_to_JSONPlaceholder.txt---------- ')
-print(' ------------------------------------------------- ')
-
-with open('post_request_to_JSONPlaceholder.txt', 'r') as file:
-    for line in file:
-        print(line.strip())
+print_stylish_separator("post_request_to_JSONPlaceholder.txt")
+print_file_content("post_request_to_JSONPlaceholder.txt")
