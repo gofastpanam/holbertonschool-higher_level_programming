@@ -10,6 +10,7 @@ curl -X POST -d "title=foo&body=bar&userId=1" https://jsonplaceholder.typicode.c
 task_01_curl.py
 
 2. Consuming and processing data from an API using Python
+task_02_requests.py
 
 
 
