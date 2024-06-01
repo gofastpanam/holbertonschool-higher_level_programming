@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This module provides an http server 
+This module provides an http server
 """
 
 import http.server
@@ -34,7 +34,7 @@ class SimpleHTTPRequestHandler(http.server.BaseHTTPRequestHandler):
             self.wfile.write(json.dumps(status).encode('utf-8'))
         else:
             self._set_response(404)
-            self.wfile.write(b"Endpoint not found")
+            self.wfile.write("Endpoint not found".encode('utf-8'))
 
     def log_message(self, format, *args):
         # Suppress logging to avoid leaking information
@@ -51,4 +51,4 @@ def run(server_class=http.server.HTTPServer,
 
 
 if __name__ == '__main__':
-    run()
+    run(server_class=socketserver.TCPServer)
