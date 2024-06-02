@@ -21,3 +21,7 @@ task_02_requests.py
 ## 3. Develop a simple API using Python with the `http.server` module
 
 task_03_http_server.py
+
+## 4. Develop a Simple API using Python with Flask
+
+task_04_flask.py 
