@@ -5,6 +5,4 @@
 ## 2. Delete a database
 ## 3. List tables
 ## 4-first_table.sql
-
-
-
+## 5. Full description
