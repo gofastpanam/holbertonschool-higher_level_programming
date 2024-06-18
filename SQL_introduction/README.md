@@ -4,6 +4,7 @@
 ## 1. Create a database
 ## 2. Delete a database
 ## 3. List tables
+## 4-first_table.sql
 
 
 
