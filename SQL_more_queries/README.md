@@ -7,3 +7,4 @@
 ## 4. creates the table id_not_null
 ## 5. creates the table unique_id
 ## 6. creates the database hbtn_0d_usa and the table states (in the database hbtn_0d_usa)
+## 7. creates the database hbtn_0d_usa and the table cities (in the database hbtn_0d_usa)
