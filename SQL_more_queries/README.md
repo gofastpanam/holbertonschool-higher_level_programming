@@ -4,3 +4,4 @@
 ## 1. creates the MySQL server user user_0d_1
 ## 2. creates the database hbtn_0d_2 and the user user_0d_2
 ## 3. creates the table force_name
+## 4. creates the table id_not_null
