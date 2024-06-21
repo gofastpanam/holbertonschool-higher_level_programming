@@ -9,3 +9,4 @@
 ## 6. creates the database hbtn_0d_usa and the table states (in the database hbtn_0d_usa)
 ## 7. creates the database hbtn_0d_usa and the table cities (in the database hbtn_0d_usa)
 ## 8. lists all the cities of California that can be found in the database hbtn_0d_usa
+## 9. Each record should display: cities.id - cities.name - states.name
