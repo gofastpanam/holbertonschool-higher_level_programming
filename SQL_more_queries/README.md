@@ -10,3 +10,4 @@
 ## 7. creates the database hbtn_0d_usa and the table cities (in the database hbtn_0d_usa)
 ## 8. lists all the cities of California that can be found in the database hbtn_0d_usa
 ## 9. Each record should display: cities.id - cities.name - states.name
+## 10. -- Import the database dump from hbtn_0d_tvshows to your MySQL server and lists all shows contained in hbtn_0d_tvshows that have at least one genre linked.
