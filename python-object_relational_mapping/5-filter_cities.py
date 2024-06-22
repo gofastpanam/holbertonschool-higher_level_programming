@@ -32,7 +32,7 @@ if __name__ == "__main__":
     state_name = sys.argv[4]
 
     # Use parameterized query to prevent SQL injection
-    query = "SELECT * FROM cities WHERE BINARY state.name = %s "
+    query = "SELECT * FROM cities WHERE BINARY states.name = %s "
     "ORDER BY cities.id ASC"
     cursor.execute(query, (state_name,))
     result = cursor.fetchall()
