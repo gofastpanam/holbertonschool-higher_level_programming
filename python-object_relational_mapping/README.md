@@ -9,3 +9,5 @@
 ## 3. This module takes in an argument and displays all values in the states table of hbtn_0e_0_usa, and is safe from MySQL injections
 
 ## 4. This module lists all cities from the database hbtn_0e_4_usa
+
+## 5. This module takes in the name of a state as an argument and lists all cities of that state, using the database hbtn_0e_4_usa
