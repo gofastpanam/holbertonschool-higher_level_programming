@@ -5,9 +5,8 @@ It takes 4 arguments:
     1. MySQL username
     2. MySQL password
     3. Database name
-    4. state name searched
 The script connects to a MySQL server running on localhost at port 3306.
-Results are sorted in ASC order by states.id, safe from MySQL injections.
+Results are sorted in ASC order by cities.id.
 """
 
 import MySQLdb
