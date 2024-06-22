@@ -3,3 +3,4 @@
 ## 0. lists all states from the database hbtn_0e_0_usa
 ## 1. lists all states with a name starting with N (upper N) from the database hbtn_0e_0_usa
 ## 2. takes in an argument and displays all values in the states table of hbtn_0e_0_usa
+## 3. takes in an argument and displays all values in the states table of hbtn_0e_0_usa, safe from MySQL injections
