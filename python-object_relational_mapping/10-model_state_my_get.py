@@ -27,8 +27,8 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    states_searched = session.query(State).filter_by(
-        name='state_name_to_search'.all())
+    states_searched = session.query(State).filter(
+        State.name == 'state_name_to_search'.first())
     if states_searched is None:
         print("Not found")
     else:
