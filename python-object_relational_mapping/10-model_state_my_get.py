@@ -29,7 +29,10 @@ if __name__ == "__main__":
 
     states_searched = session.query(State).filter_by(
         name='state_name_to_search'.all())
-    for state in states_searched:
-        print(state.id)
+    if states_searched is None:
+        print("Not found")
+    else:
+        for state in states_searched:
+            print(state.id)
 
     session.close()
