@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This module provides a lists all State objects from the database hbtn_0e_6_usa
+This module prints the first State object from the database hbtn_0e_6_usa
 """
 from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.orm import sessionmaker
@@ -25,11 +25,8 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    states = session.query(State).order_by(State.id).filter_by(id=1).one()
+    states = session.query(State).order_by(State.id).all()
     for state in states:
-        try:
-            print("{}: {}".format(state.id, state.name))
-        except:
-            print("Nothing")
+        print("{}: {}".format(state.id, state.name))
 
     session.close()

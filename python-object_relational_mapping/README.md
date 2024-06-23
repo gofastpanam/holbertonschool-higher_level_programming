@@ -15,3 +15,5 @@
 ## 6. This module provides First state model
 
 ## 7. This module provides lists all State objects from the database hbtn_0e_6_usa
+
+## 8. This module prints the first State object from the database hbtn_0e_6_usa
