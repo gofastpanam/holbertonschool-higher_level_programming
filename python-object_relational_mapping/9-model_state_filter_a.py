@@ -29,6 +29,6 @@ if __name__ == "__main__":
     states_a = session.query(State).filter(
         State.name.ilike('%a%')).order_by(State.id).all()
     for state in states_a:
-        print("{0}: {1}".format(states_a.id, states_a.name))
+        print("{0}: {1}".format(state.id, state.name))
 
     session.close()
