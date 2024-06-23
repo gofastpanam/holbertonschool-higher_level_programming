@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-This module provides a class State links to the MYSQL table states
+This module provides a lists all State objects from the database hbtn_0e_6_usa
 """
 from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.orm import sessionmaker

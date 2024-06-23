@@ -13,3 +13,5 @@
 ## 5. This module takes in the name of a state as an argument and lists all cities of that state, using the database hbtn_0e_4_usa
 
 ## 6. This module provides First state model
+
+## 7. This module provides lists all State objects from the database hbtn_0e_6_usa
