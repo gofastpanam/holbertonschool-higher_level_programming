@@ -21,3 +21,7 @@
 ## 9. This module lists all State objects that contain the letter a from the database hbtn_0e_6_usa
 
 ## 10. This module prints the State object with the name passed as argument from the database hbtn_0e_6_usa
+
+## 11. This module adds the State object “Louisiana” to the database hbtn_0e_6_usa
+
+## 12. This module changes the name of a State object from the database hbtn_0e_6_usa
