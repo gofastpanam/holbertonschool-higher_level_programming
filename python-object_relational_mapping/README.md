@@ -25,3 +25,5 @@
 ## 11. This module adds the State object “Louisiana” to the database hbtn_0e_6_usa
 
 ## 12. This module changes the name of a State object from the database hbtn_0e_6_usa
+
+## 13. This module deletes all State objects with a name containing the letter a from the database hbtn_0e_6_usa
