@@ -27,3 +27,5 @@
 ## 12. This module changes the name of a State object from the database hbtn_0e_6_usa
 
 ## 13. This module deletes all State objects with a name containing the letter a from the database hbtn_0e_6_usa
+
+## 14. This module provides Python file similar to model_state.py named model_city.py that contains the class definition of a City
