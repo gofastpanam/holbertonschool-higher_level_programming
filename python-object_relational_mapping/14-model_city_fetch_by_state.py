@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 """
-This module provides a lists all City objects from the database 
+This module provides a lists all City objects from the database
 """
-from sqlalchemy import create_engine, Column, Integer, String
+from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from model_state import Base, State
-from model_city import City  
+from model_city import Base, City
+from model_state import State
 import sys
 
 
@@ -26,8 +26,8 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    cities = session.query(City).order_by(city.id).all()
+    cities = session.query(City).order_by(City.id).all()
     for city in cities:
-        print("{}: ({}) {}".format(state.name, city.id, city.name))
+        print("{}: ({}) {}".format(city.state.name, city.id, city.name))
 
     session.close()
