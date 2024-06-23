@@ -2,7 +2,6 @@
 """
 This module prints the first State object from the database hbtn_0e_6_usa
 """
-from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.orm import sessionmaker
 from model_state import Base, State
 import sys
@@ -27,10 +26,7 @@ if __name__ == "__main__":
 
     first_state = session.query(State).first()
     if first_state:
-        try:
-            print("{}: {}".format(first_state.id, first_state.name))
-        except:
-            print("Nothing")
+        print("{}: {}".format(first_state.id, first_state.name))
     else:
         print("Nothing")
 
